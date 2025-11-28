@@ -1,12 +1,9 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Routes } from '@angular/router';
+import { WhoAreYouComponent } from './components/who-are-you-component/who-are-you-component';
 
-
-
-@NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
-})
-export class LandingPageModuleModule { }
+export const routes: Routes = [
+  {
+    path: '',
+    component: WhoAreYouComponent
+  }
+];
